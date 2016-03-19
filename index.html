@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HotelApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"
+    </head>
+    <body>
+        <div data-role="page" id="home">
+	       <div data-role="header"><h1>Hotel App</h1></div>
+	       <div role="main" class="ui-content">
+                <ul  data-role="listview" data-inset="true">
+                    <li><a href="#nr1">Reservas</a></li>
+                    <li><a href="#historial">Historial</a></li>
+                    <li><a href="#politicas">Políticas</a></li>
+               </ul>
+            </div>
+	       <div data-role="footer" data-position="fixed" >
+               <span style="font-size=8pt;">Todos los derechos reservados &copy;</span>
+               <a href="#nosotros" data-transition="slideup">Nosotros</a>
+            </div>
+        </div>
+        
+         <div data-role="page" id="nosotros">
+	       <div data-role="header"><a href="#" data-rel="back">Atras</a><h1>Nosotros</h1></div>
+	       <div role="main" class="ui-content">
+                <p>To make a list filterable, simply add the data-filter="true" attribute to the list. The framework will then append a search box above the list and add the behavior to filter out list items that don't contain the current search string as the user types. The input's placeholder text defaults to "Filter items...". To configure the placeholder text in the search input, use the data-filter-placeholder attribute. By default the search box will inherit its theme from its parent. The search box theme can be configured using the data attribute data-filter-theme on your listview.
+               </p>
+            </div>
+        </div>
+        
+        <div data-role="page" id="politicas">
+	       <div data-role="header"><a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">Atras</a><h1>Políticas</h1></div>
+	       <div role="main" class="ui-content">
+                <p>Important: Some platforms currently have issues with transitions. We are working on a solution to solve the problem for everyone. If you are experiencing flickers and flashes during or at the end of a transition we suggest the following workaround. Please note that this workaround should be thoroughly tested on the target platform before deployment. This workaround is known to cause performance issues and browser crashes on some platforms, especially Android. Add the following code to your custom css.
+               </p>
+            </div>
+        </div>
+        
+        <div data-role="page" id="historial">
+	       <div data-role="header"><a href="#" data-rel="back" class="ui-content">Atras</a><h1>Historial</h1></div>
+	       <div role="main" class="ui-content">
+                
+            </div>
+        </div>
+        
+        <div data-role="page" id="nr1">
+	       <div data-role="header"><h1>Reservar</h1></div>
+	       <div role="main" class="ui-content">
+               <ul data-role="listview">
+                   <li date-roles="list-divider">Datos de Reserva
+                   </li>
+                    <li>
+                        <select id="nrPer">
+                            <option value="">Personas</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>    
+                            <option value="5">5</option>
+                        </select>
+                   </li>
+                    <li>
+                        <select id="nrDia">
+                            <option value="">Dias</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>    
+                            <option value="5">5</option>
+                        </select>
+                   </li>
+                </ul>
+            </div>
+            <div  data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active">Siguiente</a></li>
+                        <li><a href="#home">Cancelar</a></li>
+                    </ul>
+            </div><!-- /navbar -->
+        </div>
+        </div>
+        
+        <div data-role="page" id="nr2">
+	       <div data-role="header"><h1>Reservar</h1></div>
+	       <div role="main" class="ui-content">
+               <ul data-role="listview">
+                   <li date-roles="list-divider">Tipo de habitación
+                   </li>
+                    <li><a href="#">Suite</a></li>
+                    <li><a href="#">Doble</a></li>
+                    <li><a href="#">Sencillo</a></li>
+                </ul>
+            </div>
+            <div  data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active">Reservar</a></li>
+                        <li><a href="#home">Cancelar</a></li>
+                    </ul>
+            </div><!-- /navbar -->
+        </div>
+        </div>
+        
+        <div data-role="page" id="registro">
+	       <div data-role="header"><h1>Registro</h1></div>
+	       <div role="main" class="ui-content">
+               <ul data-role="listview">
+                   <li date-roles="list-divider">Datos Personales
+                   </li>
+                    <li><input type="text" id="regNom" placeholder="Nombre Completo"></li>
+                    <li><input type="email" id= "regMail" placeholder="Corre Electronico" ></li>
+                   <li><input type="tel" id= "regTel" placeholder="Telefono" ></li>
+                    <li id="regFoto"><a href="#" id="tomarFoto">Tomar foto</a></li>
+                </ul>
+            </div>
+            <div  data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active">Registrar</a></li>
+                    </ul>
+            </div><!-- /navbar -->
+        </div>
+        </div>
+        
+        <script src="js/jquery-1.12.2.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/actions.js"></script>
+    </body>
+</html>
