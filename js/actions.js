@@ -36,4 +36,4 @@ var fn = {
     }
 };
 
-$(fn.init);
+$(fn.ready);
