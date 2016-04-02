@@ -6,7 +6,7 @@ var capture = {
         }
         
         $('#regFoto').attr('data-foto',path);
-        $('#regFoto').attr('<img src="'+path+'" style="width:100%;",path');
+        $('#regFoto').attr('<img src="'+path+'" style="width:100%;">');
     },
     captureError: function(error) {
         navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error','Perfecto!');

@@ -11,9 +11,10 @@ var ft = {
         alert("An error has occurred: Code = " + error.code);
     },
     transfer: function(fileURL){
+        alert(fileURL);
         var options = new FileUploadOptions();
         options.fileKey = "foto";
-        options.fileName = "carmen";
+        options.fileName = "acarmen";
         options.mimeType = "image/jpeg";
         
         ft.obj.upload(fileURL, "http://carlos.igitsoft.com/apps/test.php", ft.win, ft.fail, options);
