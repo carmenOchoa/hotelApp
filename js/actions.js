@@ -20,7 +20,7 @@ var fn = {
         var nom = $('#regNom').val();
         var mail = $('#regMail').val();
         var tel = $('#regTel').val();
-        var foto = $('#regFoto').data('Foto');
+        var foto = $('#regFoto').data('foto');
     
         if (nom != '' && mail != '' && tel != '' && foto != undefined)
                 $.ajax({
