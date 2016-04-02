@@ -6,13 +6,13 @@ var capture = {
         }
         
         $('#regFoto').attr('data-foto',path);
-        $('#regFoto').attr('<img src="'+path+'" style="width:100%;">');
+        $('#regFoto').html('<img src="'+path+'" style="width:100%;">');
     },
     captureError: function(error) {
         navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error','Perfecto!');
     },
     takePhoto: function(){
         alert('1');
-        navigator.device.capture.captureImage(capture.Success, capture.captureError, {limit:2});
+        navigator.device.capture.captureImage(capture.success, capture.captureError, {limit:2});
     }
 }
