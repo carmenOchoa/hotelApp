@@ -12,7 +12,7 @@ var capture = {
         navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error','Perfecto!');
     },
     takePhoto: function(){
-        alert('1');
+        alert(1);
         navigator.device.capture.captureImage(capture.success, capture.captureError, {limit:2});
     }
 };
