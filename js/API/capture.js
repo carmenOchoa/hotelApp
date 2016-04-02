@@ -1,5 +1,4 @@
 var capture = {
-    
     success: function(mf){
         var i, path, len;
         for (i = 0, len = mf.length; i < len; i += 1) {
@@ -7,7 +6,7 @@ var capture = {
         }
         
         $('#regFoto').attr('data-foto',path);
-        $('#regFoto').attr('<img src="' + path + '" style="width:100%;",path);
+        $('#regFoto').attr('<img src="'+path+'" style="width:100%;",path');
     },
     captureError: function(error) {
         navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error','Perfecto!');
