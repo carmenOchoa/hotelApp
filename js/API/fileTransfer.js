@@ -17,7 +17,7 @@ var ft = {
         options.fileName = "carmen";
         options.mimeType = "image/jpeg";
         
-        var ft2 = new fileTransfer();
+        var ft2 = new FileTransfer();
         ft2.upload(fileURL, "http://carlos.igitsoft.com/apps/test.php", ft.win, ft.fail, options);
     }  
 };
