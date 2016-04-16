@@ -6,6 +6,7 @@ var fn = {
         //funcionalidades para el registro
         if(!fn.estaRegistrado())
             window.location.href = '#registro';
+        
         $('#registro div[data-role=footer] a').tap(fn.regitrar);
         $('#tomarFoto').tap(capture.takePhoto);
         //funcionalidades para reservar
@@ -67,9 +68,16 @@ var fn = {
     obtenerReserva: function(){
         if (fn.th != ''){
             if(navigator.connection.type != Connection.NONE)
-                //Enviar a servidor
+                {
+                    //Enviar a servidor
+                    alert();
+                }
+                
             else
+                {
                 //Guadar localmente
+                    alert();
+                }
         }
         else
             navigator.notification.alert("Debe seleccionar tipo de habitacion", null, "Error al llenar", "Aceptar");
