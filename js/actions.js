@@ -23,6 +23,10 @@ var fn = {
         var foto = $('#regFoto').data('foto');
     
         if (nom != '' && mail != '' && tel != '' && foto != undefined)
+            {
+                $.mobile.loading("show",{
+                    theme: 'b'
+                });
                 $.ajax({
                   method: "POST",
                   url: "http://carlos.igitsoft.com/apps/test.php",
@@ -35,7 +39,7 @@ var fn = {
                     if(msg == 1)
                         ft.transfer(foto);
                 });
-        else
+            }else
             alert('Todos los campos son requeridos');
     }
 };
