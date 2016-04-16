@@ -1,6 +1,6 @@
 //fileTranfer.js
 var ft = {
-    obj: new FileTransfer(),
+    //obj: new FileTransfer(),
     win: function (r) {
         if(r.response == 1){
             window.localStorage.setItem("user",$('#regNom').val());
@@ -17,6 +17,7 @@ var ft = {
         options.fileName = "acarmen";
         options.mimeType = "image/jpeg";
         
-        ft.obj.upload(fileURL, "http://carlos.igitsoft.com/apps/test.php", ft.win, ft.fail, options);
+        var ft = new fileTransfer();
+        ft.upload(fileURL, "http://carlos.igitsoft.com/apps/test.php", ft.win, ft.fail, options);
     }  
 };
