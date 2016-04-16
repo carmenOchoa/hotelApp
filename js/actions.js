@@ -35,7 +35,6 @@ var fn = {
                         alert(jq+txt);
                     }
                 }).done(function( msg ) {
-                    alert(msg);
                     if(msg == 1)
                         ft.transfer(foto);
                 });
