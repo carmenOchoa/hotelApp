@@ -17,10 +17,14 @@
         Carlos Celma 
     </author>
 
-    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation" value="portrait" />
         
-    <plugin name="cordova-plugin-media-capture" />
-    <plugin name="cordova-plugin-file-transfer" />
-    
+    <gab.plugin name="org.apache.cordova.media-capture" />
+    <gab.plugin name="org.apache.cordova.file-transfer" />
+    <gab.plugin name="org.apache.cordova.dialogs" />
+    <gab.plugin name="org.apache.cordova.vibration" />
+    <gab.plugin name="org.apache.cordova.device" />
+    <gab.plugin name="org.apache.cordova.network-information" />
+        
 </widget>
