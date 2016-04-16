@@ -20,11 +20,11 @@
     <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation" value="portrait" />
         
-    <gab.plugin name="org.apache.cordova.media-capture" />
-    <gab.plugin name="org.apache.cordova.file-transfer" />
-    <gab.plugin name="org.apache.cordova.dialogs" />
-    <gab.plugin name="org.apache.cordova.vibration" />
-    <gab.plugin name="org.apache.cordova.device" />
-    <gab.plugin name="org.apache.cordova.network-information" />
+    <gap.plugin name="org.apache.cordova.media-capture" />
+    <gap.plugin name="org.apache.cordova.file-transfer" />
+    <gap.plugin name="org.apache.cordova.dialogs" />
+    <gap.plugin name="org.apache.cordova.vibration" />
+    <gap.plugin name="org.apache.cordova.device" />
+    <gap.plugin name="org.apache.cordova.network-information" />
         
 </widget>
