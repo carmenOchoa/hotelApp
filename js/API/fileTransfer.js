@@ -1,6 +1,5 @@
 //fileTranfer.js
 var ft = {
-    //obj: new FileTransfer(),
     win: function (r) {
         if(r.response == 1){
             window.localStorage.setItem("user",$('#regNom').val());
