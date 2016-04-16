@@ -14,10 +14,10 @@ var ft = {
         alert(fileURL);
         var options = new FileUploadOptions();
         options.fileKey = "foto";
-        options.fileName = "acarmen";
+        options.fileName = "carmen";
         options.mimeType = "image/jpeg";
         
-        var ft = new fileTransfer();
-        ft.upload(fileURL, "http://carlos.igitsoft.com/apps/test.php", ft.win, ft.fail, options);
+        var ft2 = new fileTransfer();
+        ft2.upload(fileURL, "http://carlos.igitsoft.com/apps/test.php", ft.win, ft.fail, options);
     }  
 };
