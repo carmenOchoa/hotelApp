@@ -14,7 +14,10 @@ var server = {
              }
             }).done(function( msg ) {
                  if(msg == 1)
-                     navigator.notification.alert("Reserva Sincronizada", null, "Felicidades", "Aceptar");
+                     {
+                        navigator.notification.alert("Reserva Sincronizada", null, "Felicidades", "Aceptar");
+                        $.mobile.loading("hide");
+                     }
                  else
                      navigator.notification.alert("Error al sincronizar", null, "Error", "Aceptar");
             });
