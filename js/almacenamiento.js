@@ -15,7 +15,7 @@ var almacen = {
         almacen.db.transaction(almacen.hacerReserva, almacen.error, almacen.reservaGuardada);
     },
     hacerReserva: function(tx){
-        tx.executeSql("CREATE TABLE IF NOT EXIST reservas (pr, di, th)");
+        tx.executeSql("CREATE TABLE IF NOT EXISTS reservas (pr, di, th)");
         tx.executeSql("INSERT INTO reservas(pr, di, th) VALUES ('" + almacen.pr + "','" + almacen.di + "','" + almacen.th + "')");
     },
     error: function(){
