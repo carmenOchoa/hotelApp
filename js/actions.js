@@ -75,8 +75,8 @@ var fn = {
                 
             else
                 {
-                //Guadar localmente
-                    alert();
+                    //Guadar localmente
+                    almacen.guardarReserva(fn.per, fn.dia, fn.th);
                 }
         }
         else
