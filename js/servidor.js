@@ -12,12 +12,12 @@ var server = {
              error: function(jq,txt){
                   navigator.notification.alert("Error al sincronizar", null, "Error", "Aceptar");
              }
-        }).done(function( msg ) {
+            }).done(function( msg ) {
                  if(msg == 1)
                      navigator.notification.alert("Reserva Sincronizada", null, "Felicidades", "Aceptar");
                  else
                      navigator.notification.alert("Error al sincronizar", null, "Error", "Aceptar");
-                });
+            });
         }else
             alert('Todos los campos son requeridos');
     }        
