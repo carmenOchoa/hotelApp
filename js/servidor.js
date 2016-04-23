@@ -20,6 +20,5 @@ var server = {
                 });
         }else
             alert('Todos los campos son requeridos');
-    },
-        
+    }        
 };
