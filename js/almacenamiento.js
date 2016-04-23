@@ -32,9 +32,9 @@ var almacen = {
             for(i = 0; i < t.rows.length; i++)
                 {
                     navigator.notification.confirm("Personas: " + t.rows.item(i).pr + "\n" + "Dias: " + t.rows.item(i).di + "\n" + "Tipo de habitación: " + t.rows.item(i).th, function(btn){
-                        if(btn = 1)
+                        if(btn == 1)
                             navigator.vibrate(500);
-                        if(btn = 2)
+                        if(btn == 2)
                             navigator.notification.beep(1);
                     }, "Tabla Reservas", "Vibrar, Sonar, Cancelar");
                 }
