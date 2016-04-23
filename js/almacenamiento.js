@@ -33,7 +33,7 @@ var almacen = {
                 {
                     navigator.notification.confirm("Personas: " + t.rows.item(i).pr + "\n" + "Dias: " + t.rows.item(i).di + "\n" + "Tipo de habitación: " + t.rows.item(i).th, function(btn){
                         if(btn == 1)
-                            navigator.vibrate(500);
+                            navigator.vibrate(600);
                         if(btn == 2)
                             navigator.notification.beep(1);
                     }, "Tabla Reservas", "Vibrar, Sonar, Cancelar");
