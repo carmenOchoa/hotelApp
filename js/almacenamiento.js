@@ -28,7 +28,7 @@ var almacen = {
         almacen.db.transaction(almacen.consultaReserva, almacen.error, null);
     },
     consultaReserva: function(tx){
-        tx.executeSql("", [], function(tx2, t){//en t obtenemos la tabla
+        tx.executeSql("SELECT * FROM reservas", [], function(tx2, t){//en t obtenemos la tabla
             for(i = 0; i < t.rows.length; i++)
                 {
                     navigator.notification.confirm("Personas: " + t.rows.item(i).pr + "\n" + "Dias: " + t.rows.item(i).di + "\n" + "Tipo de habitación: " + t.rows.item(i).th, function(btn){
