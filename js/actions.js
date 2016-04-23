@@ -71,6 +71,7 @@ var fn = {
                 {
                     //Enviar a servidor
                     server.sincronizar(fn.per, fn.dia, fn.th);
+                    historial.guardarHistorial(fn.per, fn.dia, fn.th);
                 }
                 
             else
