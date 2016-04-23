@@ -70,7 +70,7 @@ var fn = {
             if(navigator.connection.type != Connection.NONE)
                 {
                     //Enviar a servidor
-                    alert();
+                    server.sincronizar(fn.per, fn.dia, fn.th);
                 }
                 
             else
