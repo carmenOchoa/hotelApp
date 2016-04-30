@@ -64,5 +64,20 @@ var almacen = {
     },
     historialGuardado: function(){
         navigator.notification.alert("Historial Guardado", null, "Felicidades", "Aceptar");
+    },
+    consultarHistorial: function(){
+        /*almacen.db = window.openDatabase("hotelApp", "1.0", "HotelApp Storage", 20000);
+        //transaccion
+        almacen.db.transaction(almacen.consultaHistorial, almacen.error, null);*/
+        alert("historial");
+    },
+    consultaHistorial: function(tx3)
+    {
+        tx3.executeSql("SELECT * FROM historial", [], function(tx3, t){//en t obtenemos la tabla
+            for(i = 0; i < t.rows.length; i++)
+                {
+                    "Personas: " + t.rows.item(i).pr + "\n" + "Dias: " + t.rows.item(i).di + "\n" + "Tipo de habitación: " + t.rows.item(i).th);
+                }
+        });
     }
 }
