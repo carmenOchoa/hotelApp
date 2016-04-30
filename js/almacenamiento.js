@@ -66,18 +66,20 @@ var almacen = {
         navigator.notification.alert("Historial Guardado", null, "Felicidades", "Aceptar");
     },
     consultarHistorial: function(){
-        /*almacen.db = window.openDatabase("hotelApp", "1.0", "HotelApp Storage", 20000);
+        alert("Historial");
+        almacen.db = window.openDatabase("hotelApp", "1.0", "HotelApp Storage", 20000);
         //transaccion
-        almacen.db.transaction(almacen.consultaHistorial, almacen.error, null);*/
-        alert("historial");
+        almacen.db.transaction(almacen.consultaHistorial, almacen.error, null);
     },
     consultaHistorial: function(tx3)
     {
         tx3.executeSql("SELECT * FROM historial", [], function(tx3, t){//en t obtenemos la tabla
+            var grid ='<div class="ui-grid-b"><div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">PERSONAS</div></div><div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">DIAS</div></div><div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">TIPO HABITACIÓN</div></div></div>';
             for(i = 0; i < t.rows.length; i++)
                 {
-                    "Personas: " + t.rows.item(i).pr + "\n" + "Dias: " + t.rows.item(i).di + "\n" + "Tipo de habitación: " + t.rows.item(i).th);
+                    grid += '<div class="ui-grid-b"><div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">'+t.rows.item(i).pr+'</div></div><div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">'+t.rows.item(i).di+'</div></div><div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">'+t.rows.item(i).th+'</div></div></div>';
                 }
+            $("#hi").html(grid);
         });
     }
 }
