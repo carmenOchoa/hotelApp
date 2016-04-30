@@ -16,7 +16,7 @@ var server = {
                  if(msg == 1)
                      {
                         navigator.notification.alert("Reserva Sincronizada", null, "Felicidades", "Aceptar");
-                         historial.guardarHistorial(fn.per, fn.dia, fn.th);
+                        almacen.guardarHistorial(fn.per, fn.dia, fn.th);
                         $.mobile.loading("hide");
                      }
                  else
@@ -24,5 +24,5 @@ var server = {
             });
         }else
             alert('Todos los campos son requeridos');
-    }        
+    }
 };

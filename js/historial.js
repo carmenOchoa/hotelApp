@@ -23,5 +23,6 @@ var historial = {
     },
     historialGuardado: function(){
         navigator.notification.alert("Historial Guardado", null, "Felicidades", "Aceptar");
+        
     }
 }
