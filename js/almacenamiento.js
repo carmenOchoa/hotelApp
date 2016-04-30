@@ -66,7 +66,6 @@ var almacen = {
         navigator.notification.alert("Historial Guardado", null, "Felicidades", "Aceptar");
     },
     consultarHistorial: function(){
-        alert("Historial");
         almacen.db = window.openDatabase("hotelApp", "1.0", "HotelApp Storage", 20000);
         //transaccion
         almacen.db.transaction(almacen.consultaHistorial, almacen.error, null);
